@@ -1,5 +1,5 @@
 //Nombre y Apellido: brisa scomazzon
-//Curso: 
+//Curso: 6to B 
 //Grupo
 //Taller de Programacion III
 //Departamento de Informatica - EESTn°1 - Raul Scalabrini Ortiz
