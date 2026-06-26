@@ -162,9 +162,12 @@ function diaDeLaSemana(numeroDeDia) {
     return "Viernes";
   } else if (numeroDia === 7) {
     return "Sabado";
+  } else if (n.toString()[0] === '9') {
+    return true;
   } else {
-    return "Numero invalido";
+    return false;
   }
+    
 }
 
 function empiezaConNueve(n) {
@@ -177,14 +180,42 @@ function todosIguales(arreglo) {
   //Escriba la función todosIguales, que indique si todos los elementos de un arreglo son iguales:
   //retornar true, caso contrario retornar false.
   //Escribe tu código aquí
+  if (arreglo.length === 0) {
+    return true;
+  }
+for (let i = 1; i < arreglo.length; i++) {
+    if (arreglo[i]!== arreglo[0]) {
+      return false; 
+    }
+  }
+  return true; 
 }
+
 
 function mesesDelAño(array) {
   //Dado un array que contiene algunos meses del año desordenados, recorrer el array buscando los meses de
   // "Enero", "Marzo" y "Noviembre", guardarlo en nuevo array y retornarlo.
   //Si alguno de los meses no está, devolver: "No se encontraron los meses pedidos"
   // Tu código:
+  let mesesBuscados = ["Enero", "Marzo", "Noviembre"];
+  let resultado = [];
+
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === "Enero" || array[i] === "Marzo" || array[i] === "Noviembre") {
+      resultado.push(array[i]);
+    }
+  }
+
+  if (resultado.length === 3) {
+    return resultado;
+  } else {
+    return "No se encontraron los meses pedidos";
+  }
 }
+
+  
+
+
 
 function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
