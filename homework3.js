@@ -30,7 +30,9 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-  nn 
+  return array.map(function(num) {
+return num + 1;
+  });
 }
 
 function agregarItemAlFinalDelArray(array, elemento) {
@@ -62,6 +64,7 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
+  return array.contiene(elemento);
 }
 
 function agregarNumeros(numeros) {
