@@ -103,7 +103,15 @@ function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
   // Devuelve el número más grande
   // Tu código:
+  let max = numeros[0];
+  for (let i = 1; i < numeros.length; i++) {
+    if (numeros[i] > max) {
+      max = numeros[i];
+    }
+  }
+  return max;
 }
+
 
 function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
