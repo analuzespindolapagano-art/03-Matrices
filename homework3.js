@@ -306,12 +306,14 @@ function invertirArray(array) {
   // Usa el método `.reverse` para invertir el orden de los elementos del array.
   // Devuelve el array invertido.
   // Tu código:
+  return array.reverse();
 }
 
 function unirArrays(array1, array2) {
   // Usa el método `.concat` para unir "array1" y "array2" en uno nuevo.
   // Devuelve el nuevo array sin modificar los originales.
   // Tu código:
+  return array1.contat(array2);
 }
 
 function duplicarElementos(array) {
