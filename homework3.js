@@ -304,7 +304,9 @@ function cortarArray(array, inicio, fin) {
 function eliminarElementos(array, inicio, cantidad) {
   // Usa el método `.splice` para eliminar "cantidad" elementos desde la posición "inicio".
   // Devuelve el array modificado.
-  // Tu código:
+  // Tu código:return array.indexOf(elemento);
+ return array.splice(inicio, cantidad);
+  return array;
 }
 
 function invertirArray(array) {
