@@ -320,13 +320,21 @@ function duplicarElementos(array) {
   // "array" debe ser una matriz de enteros.
   // Usa el método `.map` para devolver un nuevo array con cada elemento multiplicado por 2.
   // Tu código:
+  return array.map(function(numero) {
+    return numero * 2;
+  });
 }
+
 
 function imprimirElementos(array) {
   // Usa el método `.forEach` para imprimir (console.log) cada elemento del array.
   // No devuelve nada (undefined).
   // Tu código:
+  array.forEach(function(elemento) {
+    console.log(elemento);
+  });
 }
+
 
 // No modificar nada debajo de esta línea
 // --------------------------------
