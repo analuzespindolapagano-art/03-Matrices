@@ -298,6 +298,7 @@ function cortarArray(array, inicio, fin) {
   // Usa el método `.slice` para devolver una copia del array desde "inicio" hasta "fin" (sin incluir "fin").
   // No modificar el array original.
   // Tu código:
+  return array.slice(inicio, fin);
 }
 
 function eliminarElementos(array, inicio, cantidad) {
@@ -317,7 +318,7 @@ function unirArrays(array1, array2) {
   // Usa el método `.concat` para unir "array1" y "array2" en uno nuevo.
   // Devuelve el nuevo array sin modificar los originales.
   // Tu código:
-  return array1.contat(array2);
+  return array1.concat(array2);
 }
 
 function duplicarElementos(array) {
