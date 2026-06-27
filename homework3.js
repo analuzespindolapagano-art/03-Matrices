@@ -288,6 +288,10 @@ function buscarIndice(array, elemento) {
   // Usa el método `.indexOf` para devolver el índice de "elemento" dentro de "array".
   // Si el elemento no existe, devuelve -1.
   // Tu código:
+  return array.indexOf(elemento);
+  if (array.indexOf(elemento) === -1) {
+    return -1;
+  }
 }
 
 function cortarArray(array, inicio, fin) {
